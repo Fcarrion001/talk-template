@@ -1,109 +1,147 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+# Java Presentation
 
-# Talk Template
-
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
-
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+A brief presentaton on Java detailing a definition, origin statement,
+description, advantages, and disadvantages of the program. Instructions for
+downloading the latest version of the Java Development Kit, and a brief
+demonstrative code-along will also be provided.
 
 ## Prerequisites
 
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
+- Basic knowledge of programming languages such as javascript, C++, etc.
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
--   Write objectives that focus on demonstrating knowledge.
--   Write learning objectives that begin with an [imperative
-    verb](https://en.wikipedia.org/wiki/Imperative_mood).
--   Avoid objectives that start with "Use" or "Understand".
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
+- Provide a basic defintion of Java along with details about the language.
+- List 2 Pros and 2 Cons of Java.
+- Explain what a JVM is and why it is important.
+- Create a Java file in Atom.
+- Compile a Java file through the terminal.
+- Successfully run Java contained in a file through the terminal.
+- Find ways to make me look amazing during this presentation.
 
 ## Preparation
 
-1.  Fork and clone this repository.
- [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-1.  Create a new branch, `training`, for your work.
-1.  Checkout to the `training` branch.
-1.  Install dependencies with `npm install`.
+1. Fork and clone this repository. [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+2. Create a new branch, `demo`, for your work.
+3. Checkout to the `demo` branch.
 
-Better preparation instructions may be found as
-[snippets](https://github.com/ga-wdi-boston/instructors/tree/master/snippets).
+## Installation
 
-It's a good idea to have students do these steps while you're writing objectives
-on the whiteboard.
+1. Navigate to the [Java SE development kit download site](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and follow the instructions provided to install JDK on your computer
 
-## Leading Topic Heading
+## What is Java
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
+- Class-based, object-oriented Programming language (OOP).
+- Derived for C and C++ shares similar syntax.
+- Created for the purpose of network programming and and the distributed
+  environment of the internet.
+- Widely used, very popular.
+- Predominant language used in Android mobile platform (NO.1 in the world).
 
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an [imperative
-verb](https://en.wikipedia.org/wiki/Imperative_mood).
+## Pros and Cons of Java
 
-## Demo: Write a Demo
+### Pros
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+1. `Portability`
+* Java excels in portability, meaning it can run on multiple operating systems
+  with little to no porting work necessary.
+* Source code is compiled into bytecode (computer object code, or code that has
+  been compiled for use by a processor).
+* Bytecode is processed by the Java Virtual Machine program and converted into
+  instruction that the computer processor using it will understand.
+* The JVM takes the place of the operating system meaning source code needs to
+  only be compiled once and can run on any platform.
+2. `Robust code`
+* Java objects do not reference external data or other known objects.
+* This protects data storage in other apps or OS preventing them from crashing
+  or terminating.
+* JVM also performs checks on each object to ensure integrity.
+3. `Scalability`
+* Java and the JVM is scalable while maintaining performance and reliability.
+* JVM now has dynamic code analysis meaning code is analyzed while it running.
+* Twitter moved from Ruby-on-Rails to the JVM for scalability.
 
-Demos correspond to the "I do" portion of scaffolding from consultant training.
+### Cons
 
-## Code-Along: Write an Code-Along
+1. `Security`
+* Java plugins in browsers created vulnerabilities that hackers exploited in
+  2013 with attacks spanning from Microsoft, to Apple, to Facebook
+1. `Competition`
+* Languages like Javascript, Python and PHP rival Java
+3. `Verbose code`
+  * A major drawback of Java is how verbose the code is. Other languages can often
+    times achieve the same goal with half the code.
 
-During the code-along, developers should apply concepts covered in the previous
-demo, led by the consultant.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
+## Basic Syntax
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-training.
+* Classes are UpperCamelCase, while methods and instances are lowerCamelCase
+* Variables are declared by writing its type and name
+* semicolons are still a thing
+* ex)
+ ```java
+ int num = 10;
+ ```
+* Java applications must have entry point defined by declaring a method called main
+* This allows the application to be run
+* The syntax for declaring main method is
+  ```java
+  public static void main(String[] args)
+  ```
+* The standard edition of Java 8 that was recently released, now allows for
+* the use of lambda expressions also known anonymous functions or funtion literals.
+* Public is kinda like scope declaration and means that the method can be used by
+  any other class or object (essentially giving it global scope).
+* [This](img/modifier_example.png) is a picture showing the different modifies
+  and relative access that other objects under the specified motifier.
+* Public classes must be declared within a file with the same name.
+* `Static` means that you can run this method without creating an instance of the class
+* `Void` means the method doesn’t return a value.
+* `Main` is the name of the method.
+* `System` is a pre-defined class provided by Java with methods and variables attached to it.
+* `Out` is a static variable within `System` that is the equivilent to (stdout) is javascript.
+* `Println` is a method of `out` that is used to print a line similar to console.log or print.
 
-## Lab: Write a Lab
+## Code along
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
+1. While in the repo from the terminal, run `javac -version`.
+You should see something that looks like [this](https://www.dropbox.com/s/yj5d180qguhc4rt/Screenshot%202017-08-14%2023.54.54.png?dl=0)
+2. Next create a new file `(touch)` and calle it `MyFirstJavaCode.java`
+3. Now we are gonna write some code in the file. Begin by defining a class.
+   ```java
+   public class HelloWorld {
 
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
+   }
+   ```
+4. Next lets use the main method to print "Hello World" on the terminal.
+   ```java
+   public static void main(String[] args)
+ {
 
-Labs correspond to the "You do" portion of scaffolding from consultant
-training.
+    System.out.println("Hello World.");
 
-## Additional Resources
+ }
 
--   Any useful links should be included in the talk material where the link is
-    first referenced.
--   Additional links for further study or exploration are appropriate in this
-    section.
--   Links to important parts of documentation not covered during the talk, or
-    tools tangentially used but not part of the focus of the talk, are also
-    appropriate.
+ }
+ ```
+ 5. Now from the command line, type `javac <fileName>.java` this will compile
+    the file so that we can run it.  You should see a .class file created in atom.
+ 6. Now lets run the file `java <fileName>.java`
+ 7. Uh-Oh problemas... No me gusta! What happened?!?!
+ 8. Luckily we have a nice error handler that tells us exactly what went wrong.
+ 9. Lets correct the mistake and run the file again.
+ 10. Success!!! Congradulations you have taken your first step into Java.
 
-## [License](LICENSE)
+## Resources used for this presentation
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+http://whatis.techtarget.com/definition/bytecode
+http://www.theserverside.com/definition/Java
+https://en.wikipedia.org/wiki/Java_(programming_language)
+http://searchstorage.techtarget.com/definition/portability
+http://whatis.techtarget.com/definition/object-code
+http://www.infoworld.com/article/2687995/java/4-reasons-to-stick-with-java.html
+https://www.quora.com/What-does-the-main-method-do-in-Java
+https://en.wikipedia.org/wiki/Java_syntax#Identifier
+http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+http://www.learnjavaonline.org/en/Hello%2C_World%21
